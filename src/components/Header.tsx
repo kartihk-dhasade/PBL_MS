@@ -8,7 +8,6 @@ const navLinks = [
   { href: "/conditions", label: "Conditions" },
   { href: "/exercises", label: "Exercises" },
   { href: "/guides", label: "Guides" },
-  { href: "/about", label: "About" },
 ];
 
 export default function Header() {
@@ -39,10 +38,10 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 group" id="logo-link">
           <div className="w-8 h-8 bg-foreground rounded-sm flex items-center justify-center transition-transform group-hover:scale-105">
-            <span className="text-white font-heading font-bold text-sm">P</span>
+            <span className="text-white font-heading font-bold text-sm">B</span>
           </div>
           <span className="font-heading font-semibold text-lg tracking-tight">
-            PostureAlign
+            BackOnTrack
           </span>
         </Link>
 

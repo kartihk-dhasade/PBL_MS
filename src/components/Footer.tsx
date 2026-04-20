@@ -22,9 +22,9 @@ export default function Footer() {
           <div className="md:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-4">
               <div className="w-7 h-7 bg-foreground rounded-sm flex items-center justify-center">
-                <span className="text-white font-heading font-bold text-xs">P</span>
+                <span className="text-white font-heading font-bold text-xs">B</span>
               </div>
-              <span className="font-heading font-semibold text-base">PostureAlign</span>
+              <span className="font-heading font-semibold text-base">BackOnTrack</span>
             </Link>
             <p className="text-sm text-muted leading-relaxed">
               Evidence-based posture correction by a qualified physiotherapist. Fix the root cause, not the symptoms.
@@ -39,7 +39,6 @@ export default function Footer() {
                 { href: "/start-here", label: "Start Here" },
                 { href: "/exercises", label: "Exercises" },
                 { href: "/guides", label: "Guides" },
-                { href: "/about", label: "About" },
                 { href: "/free-program", label: "Free Program" },
               ].map((link) => (
                 <li key={link.href}>
@@ -103,7 +102,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="mt-12 pt-6 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-muted">
-            © {new Date().getFullYear()} PostureAlign. All rights reserved.
+            © {new Date().getFullYear()} BackOnTrack. All rights reserved.
           </p>
           <div className="flex gap-6">
             <Link href="#" className="text-xs text-muted hover:text-foreground transition-colors">Privacy</Link>

@@ -43,22 +43,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── Trust Bar ── */}
-      <section className="border-y border-border py-8 bg-surface" id="trust-bar">
-        <div className="max-w-[1000px] mx-auto px-6 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12">
-          {[
-            { value: "15+", label: "Years Experience" },
-            { value: "75,000+", label: "Subscribers" },
-            { value: "12", label: "Conditions Covered" },
-            { value: "100%", label: "Evidence-Based" },
-          ].map((stat, i) => (
-            <div key={i} className="text-center">
-              <p className="font-heading font-bold text-xl">{stat.value}</p>
-              <p className="text-xs text-muted uppercase tracking-wider mt-1">{stat.label}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+
 
       {/* ── How It Works ── */}
       <section className="py-20 px-6" id="how-it-works">
@@ -109,53 +94,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── About Preview ── */}
-      <section className="py-20 px-6 bg-surface" id="about-preview">
-        <div className="max-w-[1000px] mx-auto flex flex-col md:flex-row items-center gap-12">
-          <div className="w-24 h-24 bg-border rounded-full flex items-center justify-center flex-shrink-0">
-            <span className="text-3xl">👨‍⚕️</span>
-          </div>
-          <div>
-            <p className="text-xs text-muted uppercase tracking-widest mb-2">About the Author</p>
-            <h2 className="font-heading font-semibold text-xl mb-3">Designed by a Physiotherapist</h2>
-            <p className="text-sm text-muted leading-relaxed mb-4">
-              With over 15 years of clinical experience, I&apos;ve helped thousands of patients improve their posture. 
-              Every guide on this site follows the same evidence-based approach I use in my practice — 
-              focused on fixing the root cause, not just treating symptoms.
-            </p>
-            <Link
-              href="/about"
-              className="text-sm font-medium hover:text-muted transition-colors inline-flex items-center gap-1"
-              id="about-link"
-            >
-              Read my story <span>→</span>
-            </Link>
-          </div>
-        </div>
-      </section>
 
-      {/* ── Testimonials ── */}
-      <section className="py-20 px-6" id="testimonials">
-        <div className="max-w-[1000px] mx-auto">
-          <p className="text-xs text-muted uppercase tracking-widest text-center mb-3">What People Say</p>
-          <h2 className="font-heading font-semibold text-2xl text-center mb-12">Trusted by Thousands</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              { quote: "After years of neck pain from desk work, the forward head posture guide changed everything. Clear, actionable, and it actually works.", name: "Sarah M.", role: "Software Engineer" },
-              { quote: "I love how everything is structured step-by-step. No confusing jargon — just clear instructions. My rounded shoulders are noticeably better.", name: "James T.", role: "Graphic Designer" },
-              { quote: "The 7-day posture reset was the perfect starting point. I now do the exercises daily and my back pain has almost completely disappeared.", name: "Priya K.", role: "Teacher" },
-            ].map((t, i) => (
-              <div key={i} className="p-6 border border-border rounded-sm">
-                <p className="text-sm text-muted leading-relaxed mb-4">&ldquo;{t.quote}&rdquo;</p>
-                <div>
-                  <p className="text-sm font-medium">{t.name}</p>
-                  <p className="text-xs text-muted">{t.role}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+
+
 
       {/* ── Email Capture ── */}
       <EmailCapture variant="banner" />

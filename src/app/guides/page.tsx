@@ -1,61 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { guides } from "@/data/guides";
 
 export const metadata: Metadata = {
   title: "Guides & Articles",
-  description: "In-depth posture guides, tips, and articles written by a qualified physiotherapist. Evidence-based advice for lasting posture improvement.",
+  description: "In-depth posture guides, tips, and articles. Evidence-based advice for lasting posture improvement.",
 };
-
-const guides = [
-  {
-    slug: "proper-sitting-posture",
-    title: "The Complete Guide to Proper Sitting Posture",
-    excerpt: "Everything you need to know about setting up your workstation and maintaining good posture throughout the workday.",
-    category: "Ergonomics",
-    readTime: "12 min",
-    featured: true,
-  },
-  {
-    slug: "posture-while-sleeping",
-    title: "Best Sleeping Positions for Your Posture",
-    excerpt: "Your sleeping position affects your posture more than you think. Learn the best positions and pillow setups for spinal health.",
-    category: "Sleep",
-    readTime: "8 min",
-    featured: false,
-  },
-  {
-    slug: "posture-and-back-pain",
-    title: "The Link Between Posture and Back Pain",
-    excerpt: "Understanding how poor posture contributes to chronic back pain and what you can do about it.",
-    category: "Pain Management",
-    readTime: "10 min",
-    featured: false,
-  },
-  {
-    slug: "desk-stretches",
-    title: "10 Stretches You Can Do at Your Desk",
-    excerpt: "Quick, effective stretches designed for office workers who sit for long periods. No equipment needed.",
-    category: "Exercises",
-    readTime: "6 min",
-    featured: false,
-  },
-  {
-    slug: "posture-myths",
-    title: "5 Posture Myths Debunked by a Physiotherapist",
-    excerpt: "Common misconceptions about posture that may be holding back your progress.",
-    category: "Education",
-    readTime: "7 min",
-    featured: false,
-  },
-  {
-    slug: "morning-routine",
-    title: "A 10-Minute Morning Posture Routine",
-    excerpt: "Start your day with this quick routine designed to activate postural muscles and set you up for better alignment.",
-    category: "Routines",
-    readTime: "5 min",
-    featured: false,
-  },
-];
 
 export default function GuidesPage() {
   const featured = guides.find((g) => g.featured);
@@ -69,7 +19,7 @@ export default function GuidesPage() {
           Posture Guides
         </h1>
         <p className="text-muted text-base max-w-[600px] mb-14 animate-slide-up delay-100">
-          In-depth guides written by a qualified physiotherapist. Clear, evidence-based advice you can trust.
+          In-depth guides with clear, evidence-based advice you can trust.
         </p>
 
         {/* Featured */}

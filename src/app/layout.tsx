@@ -19,8 +19,8 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: {
-    default: "PostureAlign — Evidence-Based Posture Correction",
-    template: "%s | PostureAlign",
+    default: "BackOnTrack — Evidence-Based Posture Correction",
+    template: "%s | BackOnTrack",
   },
   description:
     "Fix your posture with evidence-based exercises and guides from a qualified physiotherapist. Free correction programs for forward head posture, rounded shoulders, and more.",
